@@ -1,14 +1,13 @@
-#ifndef MATHXPERT_MATHX_BASIC_H
-#define MATHXPERT_MATHX_BASIC_H
+#ifndef MATHXPERT_MATHX_BASIC_HPP
+#define MATHXPERT_MATHX_BASIC_HPP
 
 #include <iostream>
+#include <sstream>
 #include "typeinfo"
 #include "iomanip"
-#include <sstream>
+#include "mathX_decimal_display.hpp"
 
 namespace mathX {
-    static int DECIMAL_ACCURACY = 3;
-
     class basic {
     public:
         /**
@@ -50,7 +49,7 @@ namespace mathX {
          * @return boolean
          */
         template<typename T>
-        static bool isFinite(const T &num) {
+        static bool is_finite(const T &num) {
             if (!std::is_arithmetic_v<T>) {
                 throw std::invalid_argument("Invalid Argument: Not valid type");
             }
@@ -62,4 +61,4 @@ namespace mathX {
     };
 }
 
-#endif //MATHXPERT_MATHX_BASIC_H
+#endif //MATHXPERT_MATHX_BASIC_HPP
