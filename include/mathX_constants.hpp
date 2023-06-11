@@ -5,7 +5,7 @@
 #ifndef MATHXPERT_MATHX_CONSTANTS_HPP
 #define MATHXPERT_MATHX_CONSTANTS_HPP
 
-#include "cmath"
+#include <cmath>
 
 namespace mathX {
     static double pi = M_PI;

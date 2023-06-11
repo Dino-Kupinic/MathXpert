@@ -5,8 +5,8 @@
 #ifndef MATHXPERT_MATHX_TRIGONOMETRY_HPP
 #define MATHXPERT_MATHX_TRIGONOMETRY_HPP
 
-#include "iostream"
-#include "iomanip"
+#include <iostream>
+#include <iomanip>
 #include <sstream>
 
 namespace mathX {
