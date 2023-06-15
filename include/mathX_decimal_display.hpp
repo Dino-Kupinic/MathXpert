@@ -6,30 +6,30 @@
 #define MATHXPERT_MATHX_DECIMAL_DISPLAY_HPP
 
 namespace mathX {
-    class decimal_display {
-    public:
-        decimal_display(const decimal_display &) = delete;
+  class decimal_display {
+  public:
+    decimal_display(const decimal_display &) = delete;
 
-        decimal_display &operator=(const decimal_display &) = delete;
+    decimal_display &operator=(const decimal_display &) = delete;
 
-        static decimal_display &get_instance() {
-            static decimal_display instance;
-            return instance;
-        }
+    static decimal_display &get_instance() {
+      static decimal_display instance;
+      return instance;
+    }
 
-        [[nodiscard]] int get_decimal_display() const {
-            return decimal;
-        }
+    [[nodiscard]] int get_decimal_display() const {
+      return decimal;
+    }
 
-        void set_decimal_display(int value) {
-            decimal = value;
-        }
+    void set_decimal_display(int value) {
+      decimal = value;
+    }
 
-    private:
-        decimal_display() : decimal{3} {}
+  private:
+    decimal_display() : decimal{3} {}
 
-        int decimal;
-    };
+    int decimal;
+  };
 }
 
 #endif //MATHXPERT_MATHX_DECIMAL_DISPLAY_HPP
