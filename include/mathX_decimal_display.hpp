@@ -18,17 +18,17 @@ namespace mathX {
     }
 
     [[nodiscard]] int get_decimal_display() const {
-      return decimal;
+      return decimal_;
     }
 
     void set_decimal_display(int value) {
-      decimal = value;
+      decimal_ = value;
     }
 
   private:
-    decimal_display() : decimal{3} {}
+    decimal_display() : decimal_{3} {}
 
-    int decimal;
+    int decimal_;
   };
 }
 

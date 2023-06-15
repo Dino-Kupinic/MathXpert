@@ -8,7 +8,7 @@
 
 namespace mathX {
   double trigonometry::sin(const double &num) {
-    double num_in_rad = num * (M_PI / 180);
+    const double num_in_rad = num * (M_PI / 180);
     std::ostringstream oss;
     oss << std::fixed << std::setprecision(decimal_display::get_instance().get_decimal_display())
         << std::sin(num_in_rad);
@@ -29,7 +29,7 @@ namespace mathX {
   }
 
   double trigonometry::cos(const double &num) {
-    double num_in_rad = num * (M_PI / 180);
+    const double num_in_rad = num * (M_PI / 180);
     std::ostringstream oss;
     oss << std::fixed << std::setprecision(decimal_display::get_instance().get_decimal_display())
         << std::cos(num_in_rad);
@@ -56,7 +56,7 @@ namespace mathX {
               << std::endl;
       return std::numeric_limits<double>::quiet_NaN();
     }
-    double num_in_rad = num * (M_PI / 180);
+    const double num_in_rad = num * (M_PI / 180);
     std::ostringstream oss;
     oss << std::fixed << std::setprecision(decimal_display::get_instance().get_decimal_display())
         << std::tan(num_in_rad);
